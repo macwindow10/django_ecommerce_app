@@ -113,22 +113,21 @@ function NavBar() {
                 </Container>
             </Navbar>
 
-            <Navbar bg="dark" variant="dark" expand="lg"
-                style={{ borderTop: '1px solid grey', borderBottom: '1px solid grey' }}>
+            <Navbar bg="dark" variant="dark" expand="lg">
 
                 <Navbar.Collapse id="secondary-navbar-nav">
-                    <Nav>
-                        <LinkContainer to="/system-builder/" >
+                    <Nav >
+                        <LinkContainer to="/system-builder/">
                             <Nav.Link >System Builder</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/prebuilt-pc/" style={{ borderLeft: '1px solid grey' }}>
+                        <LinkContainer to="/prebuilt-pc/">
                             <Nav.Link >Pre-Built PC</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/laptops/" style={{ borderLeft: '1px solid grey' }}>
+                        <LinkContainer to="/prebuilt-pc/">
                             <Nav.Link >Laptops</Nav.Link>
                         </LinkContainer>
                         <div>
-                            <NavDropdown className="navbar-nav text-capitalize" style={{ borderLeft: '1px solid grey' }}
+                            <NavDropdown className="navbar-nav text-capitalize"
                                 title='Browse Products'>
                                 <LinkContainer to="/storage">
                                     <NavDropdown.Item>Storage</NavDropdown.Item>
@@ -162,7 +161,7 @@ function NavBar() {
             </Navbar>
 
             <div id="carouselExampleCaptions"
-                style={{ paddingTop: "100px", paddingBottom: "30px", "height": "450px", "position": 'relative', backgroundColor: "#343a40", backgroundImage: `url("images/black-texture-background-hexagon.jpg")`, backgroundSize: "100%", backgroundRepeat: 'no-repeat', opacity: '1.0' }}
+                style={{ paddingTop: "30px", paddingBottom: "30px", "height": "250px", "position": 'relative', backgroundColor: "#343a40" }}
                 className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0"
@@ -176,7 +175,7 @@ function NavBar() {
                             style={{ "position": 'relative', textAlign: "left" }}>
                             <h2>Experience the New Perspective of</h2>
                             <h2><span className='text-primary'>Building</span> Your Dream PC</h2>
-                            <p style={{ paddingTop: "50px", width: "80%", wordWrap: "break-word" }}>Building your own PC is a rewarding experience. With our new approach,
+                            <p style={{ width: "80%", wordWrap: "break-word" }}>Building your own PC is a rewarding experience. With our new approach,
                                 we'll help you to be sure that the compatibility of your selected PC parts is just right.</p>
                         </div>
                     </div>
@@ -185,7 +184,7 @@ function NavBar() {
                             style={{ "position": 'relative', textAlign: "left" }}>
                             <h2>Handling Your Toughest PC Parts</h2>
                             <h2><span className='text-primary'>Compatibility</span> with Ease</h2>
-                            <p style={{ paddingTop: "50px", width: "80%", wordWrap: "break-word" }}>We handle the toughest task of PC compatibility with easeand provide
+                            <p style={{ width: "80%", wordWrap: "break-word" }}>We handle the toughest task of PC compatibility with easeand provide
                                 you with the best compatibility that's available.</p>
                         </div>
                     </div>
@@ -194,20 +193,20 @@ function NavBar() {
                             style={{ "position": 'relative', textAlign: "left" }}>
                             <h2>Performing with Excellence to</h2>
                             <h2><span className='text-primary'>Do More for More</span></h2>
-                            <p style={{ paddingTop: "50px", width: "80%", wordWrap: "break-word" }}>We are excellence with the pc parts compatibility to do more for you!
+                            <p style={{ width: "80%", wordWrap: "break-word" }}>We are excellence with the pc parts compatibility to do more for you!
                                 With the ever-changing tech, you'll always get the latest and most accurate compatibility.</p>
                         </div>
                     </div>
                 </div>
                 <a className="carousel-control-prev" href='#carouselExampleCaptions'
                     type="button" data-target="#carouselExampleCaptions" data-slide="prev"
-                    style={{ width: "5%" }}>
+                    style={{ backgroundColor: "#343a40", width: "5%" }}>
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="sr-only">Previous</span>
                 </a>
                 <a className="carousel-control-next" href='#carouselExampleCaptions'
                     type="button" data-target="#carouselExampleCaptions" data-slide="next"
-                    style={{ width: "5%" }}>
+                    style={{ backgroundColor: "#343a40", width: "5%" }}>
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>
                 </a>

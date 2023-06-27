@@ -29,7 +29,7 @@ function ProductsListPage() {
     const showNothingMessage = () => {
         return (
             <div>
-                {!loading ? <Message variant='info'>Nothing to show</Message> : ""}                
+                {!loading ? <Message variant='info'>Nothing to show</Message> : ""}
             </div>
         )
     }
@@ -44,6 +44,64 @@ function ProductsListPage() {
                 </span>
             </span>}
             <div>
+                <div style={{ textAlign: 'center' }}>
+                    <h2>Pre-Built PC</h2>
+                    <h7>Looking for the pre-builts PC? Here you can explore the pre-builts PCs under every segment and PCs, which are exclusively picked by our editorial team for the power-packed performance.</h7>
+                    <div className="card-group">
+                        <div className="card m-2">
+                            <img className="card-img-top" src="images/pc-builds.jpg"
+                                alt="Pre-Built Gaming PC" />
+                            <div className="card-body">
+                                <h5 className="card-title">Pre-Built Gaming PC</h5>
+                            </div>
+                        </div>
+                        <div className="card m-2">
+                            <img className="card-img-top" src="images/pc-builds.jpg"
+                                alt="Pre-Built Cheap PC" />
+                            <div className="card-body">
+                                <h5 className="card-title">Pre-Built Cheap PC</h5>
+                            </div>
+                        </div>
+                        <div className="card m-2">
+                            <img className="card-img-top" src="images/pc-builds.jpg"
+                                alt="Pre-Built AIO PC" />
+                            <div className="card-body">
+                                <h5 className="card-title">Pre-Built AIO PC</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <input type='button' className='btn btn-secondary' value={'Explore Pre-Built PCs'} />
+
+                    <br /><br />
+                    <h2>Best Laptops</h2>
+                    <h7>Looking for the best laptops? Laptops can be a daunting purchase, but luckily we've narrowed it down for you. In this section, you'll find only the best laptops that will help you acheive better performance and experience.</h7>
+                    <div className="card-group">
+                        <div className="card m-2">
+                            <img className="card-img-top" src="images/laptop.jpg"
+                                alt="High-End Gaming Laptop" />
+                            <div className="card-body">
+                                <h5 className="card-title">High-End Gaming Laptop</h5>
+                            </div>
+                        </div>
+                        <div className="card m-2">
+                            <img className="card-img-top" src="images/pc-builds.jpg"
+                                alt="Cheap Laptops" />
+                            <div className="card-body">
+                                <h5 className="card-title">Cheap Laptops</h5>
+                            </div>
+                        </div>
+                        <div className="card m-2">
+                            <img className="card-img-top" src="images/pc-builds.jpg"
+                                alt="Business Laptops" />
+                            <div className="card-body">
+                                <h5 className="card-title">Business Laptops</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <input type='button' className='btn btn-secondary' value={'Explore Laptops'} />
+                </div>
+                <br /><br />
+
                 <Row>
 
                     {/* If length of the filter result is equal to 0 then show 'nothing found' message
@@ -56,7 +114,7 @@ function ProductsListPage() {
                         item.name.toLowerCase().includes(searchTerm !== "" ? searchTerm.split("=")[1] : "")
                     )).map((product, idx) => (
                         <Col key={product.id} sm={12} md={6} lg={4} xl={3}>
-                            <div className="mx-2"> 
+                            <div className="mx-2">
                                 <Product product={product} />
                             </div>
                         </Col>
