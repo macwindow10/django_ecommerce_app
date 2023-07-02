@@ -28,7 +28,11 @@ print(SECRET_KEY)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1, localhost").split(",")
+print(ALLOWED_HOSTS)
+ALLOWED_HOSTS.append('techcureindia-app-qyhs6.ondigitalocean.app')
+print(ALLOWED_HOSTS)
 
 # Application definition
 
