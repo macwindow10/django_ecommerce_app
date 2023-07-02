@@ -19,7 +19,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views.static import serve
 
+from my_project.views import (
+    index
+)
+
 urlpatterns = [
+                  path('', index),
                   path('admin/', admin.site.urls),
                   path('api/', include('product.urls')),
                   path('payments/', include('payments.urls')),
