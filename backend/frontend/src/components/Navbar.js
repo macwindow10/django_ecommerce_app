@@ -104,8 +104,7 @@ function NavBar() {
                                 </NavDropdown>
                             </div>
                             :
-
-                            <LinkContainer to="/login">
+                            <LinkContainer to="/" style={{ display: 'none' }}>
                                 <Nav.Link><i className="fas fa-user"></i> Login / Register</Nav.Link>
                             </LinkContainer>
                         }
